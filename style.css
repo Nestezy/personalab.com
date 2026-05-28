@@ -1,0 +1,646 @@
+:root {
+    --accent-yellow: #f4b41a; 
+    --dark-gray: #333333;
+    --text-light: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    background-image: url('images/bg-pattern.png'); 
+    background-repeat: repeat; 
+    background-attachment: fixed; 
+    color: var(--text-light); 
+}
+
+.header {
+    background-color: #666666; 
+    padding-block: 20px;
+    border-bottom: 5px solid var(--accent-yellow); 
+    border-top: 5px solid var(--accent-yellow); 
+}
+
+.header_wrapper {
+    max-width: 1069px;
+    margin-inline: auto;
+    padding: 0 20px;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    display: flex;
+    gap: 15px;
+    list-style: none; 
+}
+
+.header_list-link {
+    font-weight: 600;
+    font-size: 14px;
+    color: #111;
+    background-color: var(--accent-yellow); 
+    padding: 8px 25px; 
+    border-radius: 20px; 
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.header_list-link:hover {
+    background-color: #f4b41a; 
+}
+
+.header_list-link:active {
+    background-color: #b07d0a; 
+    transform: translateY(0); 
+}
+
+.hero_container, .what-is, .how-it-works, .examples, .welcome, .studio-workspace, .profile-intro, .auth-forms, .guide-content, .about-info, .contact-form, .page-header {
+    background-color: rgba(90, 90, 90, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 25px; 
+    padding: 50px 40px; 
+    max-width: 800px; 
+    margin: 40px auto; 
+    text-align: center; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-yellow);
+    color: #111;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #d49a11;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: var(--accent-yellow);
+    margin: 40px auto;
+    width: 60%; 
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #666666;
+    border-top: 5px solid var(--accent-yellow);
+    margin-top: 50px;
+}
+
+a {
+    color: var(--accent-yellow);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+    color: var(--text-light);
+    text-decoration: underline;
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 15px; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--accent-yellow);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+tr:hover {
+    background-color: rgba(244, 180, 26, 0.15);
+    transition: background-color 0.3s;
+}
+
+.forms-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    justify-content: center;
+}
+
+.form-box {
+    flex: 1;
+    min-width: 280px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #cccccc;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: var(--text-light); 
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    outline: none; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: var(--accent-yellow);
+    box-shadow: 0 0 8px rgba(244, 180, 26, 0.5); 
+    background-color: rgba(255, 255, 255, 0.15); 
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--accent-yellow);
+    border: 2px solid var(--accent-yellow);
+    font-weight: bold;
+    padding: 13px 38px;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent-yellow);
+    color: #111;
+}
+
+/* =========================================
+   СТИЛІ ДЛЯ ФОРМИ ВХОДУ/РЕЄСТРАЦІЇ (ТАБИ)
+   ========================================= */
+
+.auth-container {
+    max-width: 400px;
+    margin: 0 auto; 
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.auth-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tab-btn {
+    flex: 1; 
+    padding: 12px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-light);
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.tab-btn.active {
+    background-color: var(--accent-yellow);
+    color: #111;
+    border-color: var(--accent-yellow);
+}
+
+.tab-btn:hover:not(.active) {
+    border-color: var(--accent-yellow);
+    color: var(--accent-yellow);
+}
+
+.password-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.password-box input {
+    margin-bottom: 0;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%); 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.toggle-password:hover {
+    color: var(--accent-yellow);
+}
+
+.textarea-box {
+    position: relative;
+}
+
+#char-counter {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: -10px; 
+    margin-bottom: 15px;
+}
+
+.text-danger {
+    color: #ff4d4d !important;
+    font-weight: bold;
+}
+
+.profile-card {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--accent-yellow);
+    text-align: center;
+}
+
+.user-avatar {
+    width: 80px;
+    margin-bottom: 15px;
+    filter: invert(1); 
+}
+
+.status-badge {
+    background: var(--accent-yellow);
+    color: black;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.user-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 25px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.stat-item strong {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--accent-yellow);
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #aaa;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: var(--accent-yellow);
+}
+
+.dashboard-actions {
+    margin-top: 20px;
+}
+
+
+.retro-editor {
+    background-color: #1e1e1e; 
+    border-style: solid;
+    border-color: #111;
+    border-width: 4px 3px 5px 6px; 
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 15px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.editor-header {
+    background: repeating-linear-gradient(
+        -45deg,
+        #333,
+        #333 10px,
+        #222 10px,
+        #222 20px
+    ); 
+    border-style: solid;
+    border-color: #111;
+    border-width: 4px 3px 4px 6px; 
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.editor-header h2 {
+    margin: 0;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+
+.editor-body {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px; 
+    gap: 15px;
+    height: 400px; 
+}
+
+
+.column-left, .column-right {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px;
+}
+
+.retro-btn {
+    background-color: #3a3a3a; 
+    border-style: solid;
+    border-width: 4px 3px 5px 6px; 
+    border-color: #666 #111 #111 #666; 
+    border-radius: 4px;
+    font-size: 2rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.1s;
+    color: white;
+}
+
+.retro-btn:hover {
+    background-color: #4a4a4a;
+}
+
+/*Активний стан кнопки*/
+.retro-btn.active, .retro-btn:active {
+    background-color: #222; 
+    border-color: #111 #666 #666 #111; 
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.6); 
+    padding-top: 4px; 
+    padding-left: 4px;
+}
+
+/*Полотно*/
+.column-center {
+    background-color: #f5f5f5;
+    background-image: 
+        linear-gradient(#ccc 1px, transparent 1px),
+        linear-gradient(90deg, #ccc 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-style: solid;
+    border-color: #111;
+    border-width: 4px 3px 4px 6px; 
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
+}
+
+/*Обличчя*/
+.face-preview {
+    width: 180px;
+    height: 220px;
+    background-color: #C68642; 
+    border-radius: 50% 50% 50% 50% / 45% 45% 55% 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: background-color 0.3s;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3); 
+}
+
+/*Розміри рис обличчя*/
+#face-eyes { font-size: 35px; font-weight: bold; }
+#face-nose { font-size: 25px; font-weight: bold; }
+#face-mouth { font-size: 30px; font-weight: bold; }
+
+/*Undo/Redo*/
+.action-group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    cursor: default; 
+}
+
+.action-group:active {
+    border-color: #666 #111 #111 #666;
+    background-color: #3a3a3a;
+    box-shadow: none;
+    padding: 0;
+}
+
+.mini-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.mini-btn:active {
+    transform: scale(0.8) translateY(2px); 
+}
+
+
+.kidpix-guy {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    border: 1px solid #111;
+}
+
+/*ПАРАЛАКС*/
+
+.parallax-container {
+    position: relative; 
+    overflow: hidden;  }
+
+
+.hero_container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.parallax-item {
+    position: absolute;
+    font-size: 3rem; 
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.5));
+    transition: transform 0.1s ease-out;
+}
+
+/*АДАПТИВНИЙ ВЕБДИЗАЙН*/
+
+/* 3. Зображення, що адаптуються для різних пристроїв */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/*4. Використання медіа-запитів для розміру екрану менше 768px (Планшети та Телефони) */
+@media screen and (max-width: 768px) {
+    
+    /* 1. Навігаційне меню адаптується для зручного використання */
+    .header_nav {
+        flex-direction: column; /* Ставимо логотип зверху, а меню під ним */
+        gap: 15px;
+    }
+    
+    .header_list {
+        flex-wrap: wrap; /* Дозволяємо кнопкам переноситися на новий рядок */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Зменшуємо відступи в усіх головних контейнерах, щоб економити місце на телефоні */
+    .hero_container, .what-is, .how-it-works, .examples, .welcome, .studio-workspace, .profile-intro, .auth-forms, .guide-content, .about-info, .contact-form, .page-header {
+        padding: 30px 20px;
+        margin: 20px 10px;
+    }
+
+    /* 2. Гнучкий сітковий макет: Перебудова ретро-редактора */
+    .editor-body {
+        /* Змінюємо структуру з 3 колонок на 1 колонку і 3 рядки */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto; 
+        height: auto; /* Вимикаємо фіксовану висоту */
+        gap: 20px;
+    }
+
+    /* Бокові панелі перетворюємо на горизонтальні панелі */
+    .column-left, .column-right {
+        grid-template-columns: repeat(4, 1fr); /* 4 кнопки в один ряд */
+        grid-template-rows: auto;
+    }
+
+    /* Трохи зменшуємо 3D-кнопки, щоб вони вмістилися в ширину телефону */
+    .retro-btn {
+        font-size: 1.5rem;
+        padding: 5px 0;
+        border-width: 3px 2px 4px 5px; /* Робимо рамку трохи тоншою */
+    }
+
+    /* Оптимізація кнопки з людиною (Oops!) для телефону */
+    .kidpix-guy {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .mini-btn {
+        font-size: 1rem;
+    }
+
+    /* Зменшуємо розміри обличчя на телефоні, щоб воно не вилазило */
+    .face-preview {
+        width: 140px;
+        height: 180px;
+        gap: 10px;
+    }
+
+    #face-eyes { font-size: 28px; }
+    #face-nose { font-size: 20px; }
+    #face-mouth { font-size: 24px; }
+}
+
+/* Медіа-запит для зовсім маленьких екранів (старі смартфони) */
+@media screen and (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.2rem; }
+    
+    .header_list-link {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}

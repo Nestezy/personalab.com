@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - PersonaLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <nav class="header_nav">
+                <img src="images/header.svg" alt="Logo">
+                <ul class="header_list">
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="index.html">Home</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="studio.html">Studio</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / <span>Profile</span>
+            </div>
+            
+            <div class="page-title">
+                <img src="images/profile-icon.svg" alt="" width="30">
+                <h2>Особистий кабінет</h2>
+            </div>
+            
+            <p class="page-description">Увійдіть або створіть акаунт, щоб зберігати своїх персонажів.</p>
+        </section>
+        
+        <hr>
+
+        <section class="auth-forms">
+            
+            <div class="auth-container">
+               
+                <div class="auth-tabs">
+                    <button class="tab-btn active" id="btn-tab-login">Вхід</button>
+                    <button class="tab-btn" id="btn-tab-register">Реєстрація</button>
+                </div>
+
+                
+                <form id="form-login" class="auth-form">
+                    <h3>Вже є акаунт? Увійдіть</h3>
+                    <input type="email" placeholder="Електронна пошта" required>
+                    
+                   
+                    <div class="password-box">
+                        <input type="password" id="login-pass" placeholder="Пароль" required>
+                        <button type="button" class="toggle-password" data-target="login-pass">👁️</button>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Увійти</button>
+                </form>
+
+               
+                <form id="form-register" class="auth-form" style="display: none;">
+                    <h3>Новий користувач? Зареєструйтеся</h3>
+                    <input type="text" placeholder="Ваше ім'я" required>
+                    <input type="email" placeholder="Електронна пошта" required>
+                    
+                    <div class="password-box">
+                        <input type="password" id="reg-pass" placeholder="Придумайте пароль" required>
+                        <button type="button" class="toggle-password" data-target="reg-pass">👁️</button>
+                    </div>
+
+                    
+                    <div class="textarea-box">
+                        <textarea id="user-bio" placeholder="Напишіть пару слів про себе..." maxlength="100"></textarea>
+                        <p id="char-counter">0 / 100 символів</p>
+                    </div>
+
+                    <button type="submit" class="btn-secondary">Створити акаунт</button>
+                </form>
+            </div>
+
+<div id="user-dashboard" class="profile-card" style="display: none;">
+    <div class="user-info">
+        <img src="images/profile-icon.svg" alt="Аватар" class="user-avatar">
+        <h2 id="welcome-name">Вітаємо, Користувачу!</h2>
+        <p>Ваш статус: <span class="status-badge">Дослідник PersonaLab</span></p>
+    </div>
+    
+    <div class="user-stats">
+        <div class="stat-item">
+            <strong>0</strong>
+            <span>Створених персонажів</span>
+        </div>
+    </div>
+
+    <div class="dashboard-actions">
+        <a href="studio.html" class="btn-primary">Перейти до створення</a>
+        <br><br>
+        <button id="btn-logout" class="btn-link">Вийти з акаунта</button>
+    </div>
+</div>
+
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <p>&copy; 2026 PersonaLab. Усі права захищено.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

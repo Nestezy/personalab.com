@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio - PersonaLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+            <nav class="header_nav">
+                <img src="images/header.svg" alt="Logo">
+                <ul class="header_list">
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="index.html">Home</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="studio.html">Studio</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a class="header_list-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>  
+    </header>
+
+    <main>
+    <main>
+    <section class="page-header">
+        <div class="breadcrumbs">
+            <a href="index.html">Home</a> / <span>Studio</span>
+        </div>
+    </section>
+
+    <div class="retro-editor">
+        
+        <div class="editor-header">
+            <h2>Редактор персонажа</h2>
+        </div>
+
+        <div class="editor-body">
+            
+            <div class="column-left">
+                <button class="retro-btn active" id="btn-skin" title="Форма обличчя та колір">👤</button>
+                <button class="retro-btn" id="btn-eyes" title="Очі">👁️</button>
+                <button class="retro-btn" id="btn-nose" title="Ніс">👃</button>
+                <button class="retro-btn" id="btn-mouth" title="Рот">👄</button>
+            </div>
+
+            <div class="column-center">
+                <div class="face-preview" id="face-box">
+                    <div id="face-eyes">◉ ◉</div>
+                    <div id="face-nose">‿</div>
+                    <div id="face-mouth">⌣</div>
+                </div>
+            </div>
+
+            <div class="column-right">
+                <button class="retro-btn" id="btn-save" title="Зберегти">💾</button>
+                
+                <div class="retro-btn action-group" title="Скасувати / Повторити">
+                    <button id="btn-undo" class="mini-btn">↩️</button>
+                    <img src="images/booh-booh-yeah.png" alt="Oops" class="kidpix-guy">
+                    <button id="btn-redo" class="mini-btn">↪️</button>
+                </div>
+                
+                <button class="retro-btn" id="btn-random" title="Рандомайзер">🎲</button>
+                <button class="retro-btn" id="btn-help" title="Інструкція (Guide)">❓</button>
+            </div>
+
+        </div>
+    </div>
+</main>
+</main>
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <p>&copy; 2026 PersonaLab. Усі права захищено.</p>
+        </div>
+    </footer>
+   <script src="script.js"></script>
+</body>
+</html>
