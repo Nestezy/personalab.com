@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nestezy.github.io/personalab.com/sitemap.xml
