@@ -569,28 +569,28 @@ img {
     object-fit: contain;
 }
 
-/*4. Використання медіа-запитів для розміру екрану менше 768px (Планшети та Телефони) */
+/*4. для розміру екрану менше 768px*/
 @media screen and (max-width: 768px) {
     
-    /* 1. Навігаційне меню адаптується для зручного використання */
+   
     .header_nav {
-        flex-direction: column; /* Ставимо логотип зверху, а меню під ним */
+        flex-direction: column; 
         gap: 15px;
     }
     
     .header_list {
-        flex-wrap: wrap; /* Дозволяємо кнопкам переноситися на новий рядок */
+        flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
     }
 
-    /* Зменшуємо відступи в усіх головних контейнерах, щоб економити місце на телефоні */
+    /* Зменшуємо відступи в усіх головних контейнерах */
     .hero_container, .what-is, .how-it-works, .examples, .welcome, .studio-workspace, .profile-intro, .auth-forms, .guide-content, .about-info, .contact-form, .page-header {
         padding: 30px 20px;
         margin: 20px 10px;
     }
 
-    /* 2. Гнучкий сітковий макет: Перебудова ретро-редактора */
+    /* 2. редактор */
     .editor-body {
         /* Змінюємо структуру з 3 колонок на 1 колонку і 3 рядки */
         grid-template-columns: 1fr; 
@@ -599,20 +599,20 @@ img {
         gap: 20px;
     }
 
-    /* Бокові панелі перетворюємо на горизонтальні панелі */
+    
     .column-left, .column-right {
         grid-template-columns: repeat(4, 1fr); /* 4 кнопки в один ряд */
         grid-template-rows: auto;
     }
 
-    /* Трохи зменшуємо 3D-кнопки, щоб вони вмістилися в ширину телефону */
+   
     .retro-btn {
         font-size: 1.5rem;
         padding: 5px 0;
-        border-width: 3px 2px 4px 5px; /* Робимо рамку трохи тоншою */
+        border-width: 3px 2px 4px 5px;
     }
 
-    /* Оптимізація кнопки з людиною (Oops!) для телефону */
+   
     .kidpix-guy {
         width: 24px;
         height: 24px;
@@ -622,7 +622,7 @@ img {
         font-size: 1rem;
     }
 
-    /* Зменшуємо розміри обличчя на телефоні, щоб воно не вилазило */
+
     .face-preview {
         width: 140px;
         height: 180px;
@@ -634,7 +634,7 @@ img {
     #face-mouth { font-size: 24px; }
 }
 
-/* Медіа-запит для зовсім маленьких екранів (старі смартфони) */
+/* Медіа-запит для зовсім малих екранів*/
 @media screen and (max-width: 480px) {
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.2rem; }
